@@ -1,0 +1,82 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background: silver;
+    font-size: 1rem;
+    position: relative;
+}
+
+ul.nav {
+    list-style: none;
+    outline: 2px solid gold;
+    width: 40%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background: gold;
+}
+
+li.nav__item {
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    outline: 2px dotted black;
+    /* display: inline-block;
+        width: 16.5%; */
+}
+
+ul.nav .subnav {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s, heigh 0.5s;
+}
+
+.nav .subnav li {
+    display: block;
+    margin: 0;
+}
+
+li:hover .subnav {
+    height: 300px;
+    opacity: 1;
+    transition: opacity 1s, heigh 0.5s;
+}
+
+.header {
+    display: flex;
+}
+
+#modal {
+    width: 200px;
+    position: absolute;
+    margin: 20vh auto;
+    background: gold;
+    outline: 2px solid silver;
+    height: 40 vh;
+    padding: 20px;
+    left: 50%;
+    display: none;
+
+}
+label {
+    width: 100px;
+    display: block;
+
+}
+.btn-close {
+margin-left: 150px ;
+
+
+
+}
